@@ -83,6 +83,6 @@ class NotificationsController extends Controller
           #  $notification->save();
         #}
 
-        #return Redirect::route('notifications');
+        return Redirect::route('notifications');
     }
 }
