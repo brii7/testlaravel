@@ -1,0 +1,78 @@
+ul{
+    list-style-type: none;
+}
+
+/** MESSAGES VIEWS **/
+
+#message-box{
+    border: 1px solid grey;
+    margin: 25px;
+}
+#message-box:hover{
+    background-color: #DCDCDC;
+}
+#container-replymsg{
+    display:flex;
+    height: 100%;
+    border-bottom: 1px solid gainsboro;
+}
+#sidebar-replymsg{
+    width: 20%;
+    margin-top: -20px;
+    border-right: 1px solid gainsboro;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+#sidebar-replymsg li{
+    list-style-type: none;
+    padding: 15px;
+    border: 1px solid gainsboro;
+}
+#sidebar-replymsg li:first-child{
+    background-color: #E5E5E5;
+}
+#sidebar-replymsg li:hover{
+    background-color: #EDEDED;
+}
+#sidebar-replymsg li:first-child:hover{
+    background-color: #E5E5E5;
+}
+.important {
+    font-weight: bold;
+    font-size: 19px;
+}
+#body-replymsg{
+    width: 80%;
+}
+.border-bottom-separator{
+    border-bottom: 1px solid gainsboro;
+}
+@media (max-width: 990px) {
+
+    #body-replymsg { width: 70% }
+    #sidebar-replymsg { width: 30% }
+
+}
+/** END MESSAGES VIEWS **/
+
+/** SHOW NOTIFICATION VIEW **/
+.notification{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+/** END SHOW NOTIFICATION VIEW **/
+/** FLASH MESSAGE NOTIFICATION-READ **/
+
+
+.flash-message-custom {
+    top: 10px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 7px;
+}
+
+
+/** END FLASH MESSAGE NOTIFICATION-READ **/
