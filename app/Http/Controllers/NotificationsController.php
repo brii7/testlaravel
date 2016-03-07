@@ -77,12 +77,12 @@ class NotificationsController extends Controller
 
     public function readAll(Request $request){
 
-        $notifications = $this->notifications->forUser($request->user());
-        foreach($notifications as $notification){
-            $notification->state = 'Read';
-            $notification->save();
-        }
+        #$notifications = $this->notifications->forUser($request->user());
+        #foreach($notifications as $notification){
+         #   $notification->state = 'Read';
+          #  $notification->save();
+        #}
 
-        return Redirect::route('notifications');
+        #return Redirect::route('notifications');
     }
 }
