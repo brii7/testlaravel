@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="248356fc-c894-4501-a12d-06d34e9723cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+    <list default="true" id="248356fc-c894-4501-a12d-06d34e9723cd" name="Default" comment="Changed return on @readAll and still crashing">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickstart.iws" />
@@ -121,6 +119,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Brian &lt;briihd@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -358,7 +361,19 @@
       <option name="project" value="LOCAL" />
       <updated>1457351537637</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed return on @readAll and still crashing">
+      <created>1457430315030</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1457430315030</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created Assignment Model and DB tables">
+      <created>1457430490331</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1457430490331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -410,7 +425,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NotificationsController@readAll Commented out, doesn't work&#10;" />
     <MESSAGE value="Uncommented return on @readAll so it doesn't fuck up lol" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uncommented return on @readAll so it doesn't fuck up lol" />
+    <MESSAGE value="Changed return on @readAll and still crashing" />
+    <MESSAGE value="Created Assignment Model and DB tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Assignment Model and DB tables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
