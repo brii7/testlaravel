@@ -38,10 +38,12 @@ class User extends Authenticatable
         return $this->hasMany(Notification::class);
     }
     public function unfinishedtasks(){
-
         return User::tasks()->where('state','Unfinished');
-
     }
+    public function assignments(){
+        return $this->belongsToMany('App\Assignment')->withPivot('state')->withTimestamps();
+    }
+
 
     public function isSuperUser(){
 
