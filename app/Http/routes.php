@@ -86,8 +86,12 @@ Route::group(['middleware' => ['web']], function () {
     //Notifications
     Route::get('/notifications', array('as' => 'notifications', 'uses' => 'NotificationsController@index'));
     Route::get('/notifications/{notification}', array('as' => 'notifications.see','uses' => 'NotificationsController@see'));
-    Route::any('/notifications/readAll', array('as' => 'notifications.readAll','uses' => 'NotificationsController@readAll'));
+    Route::get('/notifications/readAll', array('as' => 'notifications.readAll','uses' => 'NotificationsController@readAll'));
 
+    //Assignments
+    Route::get('/assignments', array('as' => 'assignments', 'uses' => 'AssignmentController@index'));
+    Route::get('/assignments/add', array('as' => 'assignments.add', 'uses' => 'AssignmentController@addForm'));
+    Route::post('/assignments/add', array('as' => 'assignments.add', 'uses' => 'AssignmentController@add'));
 
 });
 
