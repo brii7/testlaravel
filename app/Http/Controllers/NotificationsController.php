@@ -7,10 +7,8 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Notification;
 use App\Http\Requests;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Repositories\NotificationRepository;
-use Illuminate\Support\Facades\Redirect;
 
 class NotificationsController extends Controller
 {
@@ -83,6 +81,6 @@ class NotificationsController extends Controller
           #  $notification->save();
         #}
 
-        return Redirect::route('notifications');
+        return redirect('/notifications');
     }
 }

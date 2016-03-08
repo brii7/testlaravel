@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Absolute_Positioner' => $vendorDir . '/dompdf/dompdf/include/absolute_positioner.cls.php',
     'Abstract_Renderer' => $vendorDir . '/dompdf/dompdf/include/abstract_renderer.cls.php',
+    'AddAssignmentTable' => $baseDir . '/database/migrations/2016_03_08_083819_add_assignment_table.php',
     'AddMessageSenderAndReciever' => $baseDir . '/database/migrations/2016_02_29_113835_add_message_sender_and_reciever.php',
     'AddNotificationFields' => $baseDir . '/database/migrations/2016_02_25_115340_add_notification_fields.php',
     'AddNotificationType' => $baseDir . '/database/migrations/2016_03_03_084637_add_notification_type.php',
@@ -34,7 +35,7 @@ return array(
     'Canvas' => $vendorDir . '/dompdf/dompdf/include/canvas.cls.php',
     'Canvas_Factory' => $vendorDir . '/dompdf/dompdf/include/canvas_factory.cls.php',
     'Cellmap' => $vendorDir . '/dompdf/dompdf/include/cellmap.cls.php',
-    'ChangeNotificationStateDefault' => $baseDir . '/database/migrations/2016_03_03_085804_change_notification_state_default.php',
+    'CreateAssignmentUser' => $baseDir . '/database/migrations/2016_03_08_092326_create_assignment_user.php',
     'CreateMessagesTable' => $baseDir . '/database/migrations/2014_10_28_175710_create_messages_table.php',
     'CreateParticipantsTable' => $baseDir . '/database/migrations/2014_10_28_180224_create_participants_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
