@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 use App\Assignment;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Auth;
@@ -13,24 +14,28 @@ class AssignmentController extends Controller
     public function index(Request $request)
     {
 
-        $user = $request->user();
-        $assignments = $user->assignments();
+        $user = Auth::User();
+        $assignments = $user->assignments;
 
         return view('assignments.index', [
             'assignments' => $assignments,
         ]);
     }
     public function addForm(){
-        $user = Auth::Check();
-        if(!$user->isSuperUser()){
-            return redirect('/assignments');
-        }else {
-            return view('assignments.add');
+        if(Auth::Check()) {
+            $user = Auth::User();
+            if (!$user->isSuperUser()) {
+                return redirect('/assignments');
+            } else {
+                return view('assignments.add');
+            }
+        }else{
+            return redirect('/');
         }
     }
     public function add(){
 
-        $user = Auth::Check();
+        $user = Auth::User();
         if(!$user->isSuperUser()){
 
             return redirect('/assignments');
@@ -41,7 +46,7 @@ class AssignmentController extends Controller
             $usersID = array();
 
             foreach($users as $User){
-                array_push($users,$User->id);
+                array_push($usersID,$User->id);
             }
 
             $assignment = new Assignment;
