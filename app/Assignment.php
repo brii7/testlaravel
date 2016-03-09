@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Assignment extends Model
 {
 
-    protected $fillable = ['state'];
+    protected $fillable = ['state','name'];
 
     public function users(){
 
